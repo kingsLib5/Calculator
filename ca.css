@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, blue, white);
+}
+
+.whole {
+    height: 450px;
+    width: 250px;
+    display: grid;
+    grid-template-rows: 1fr repeat(5, 60px);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #0c0b0b;
+    padding: 10px;
+}
+.display{
+    border: 2px solid #fff;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 10px;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    height: 100px;
+    width: 100%;
+    border: none;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.butsec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.control {
+    background-color: wheat;
+}
+
+.operator {
+    background-color: orange;
+    color: white;
+}
+
+.number {
+    background-color: #e0e0e0;
+}
+
+.zero {
+    width: 115px;
+    border-radius: 25px;
+}
